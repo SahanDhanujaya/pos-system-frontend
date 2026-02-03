@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navbar from "@/components/navbar/Navbar";
 import { Button } from "@/components/ui/button";
 import { Check, Zap, Building2, Store } from "lucide-react";

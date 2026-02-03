@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import { 
-  Users, UserPlus, Search, MoreHorizontal, Mail, Phone, 
-  Shield, Building2, CalendarDays, Clock, Edit2, Trash2, X 
+  Users, UserPlus, Search, Mail, 
+  Shield, Building2, Clock, Edit2, Trash2 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

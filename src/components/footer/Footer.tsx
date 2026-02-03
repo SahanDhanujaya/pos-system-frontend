@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <div className="border-t py-12 text-center text-sm text-muted-foreground">

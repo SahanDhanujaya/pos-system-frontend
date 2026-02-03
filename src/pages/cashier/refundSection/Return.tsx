@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
-import { Search, RotateCcw } from "lucide-react";
+import { useState } from "react";
+import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setReturnOrder } from "@/state/returnOrder/returnOrderSlice";
 import { type AppDispatch } from '../../../state/store';

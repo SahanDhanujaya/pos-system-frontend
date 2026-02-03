@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { useAside } from "@/context/AsideContext";
-import { UserPlus, Computer, ArrowRight, UserCircle2 } from "lucide-react";
+import { UserPlus, Computer, UserCircle2 } from "lucide-react";
 
 const ROLES = [
   { label: "Standard User", value: "USER" },

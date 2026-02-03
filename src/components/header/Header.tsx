@@ -1,8 +1,7 @@
 "use client";
 
-import React from 'react'
 import { ModeToggle } from '../toggles/ModeToggle';
-import { Menu, MenuIcon } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '../ui/button';
 import { useAside } from '@/context/AsideContext';
 

@@ -6,12 +6,10 @@ import {
   Printer, 
   LogOut, 
   User, 
-  Calendar, 
   TrendingUp, 
   CreditCard, 
   History, 
-  RotateCcw,
-  Clock
+  RotateCcw
 } from "lucide-react";
 
 export default function ShiftSummary() {

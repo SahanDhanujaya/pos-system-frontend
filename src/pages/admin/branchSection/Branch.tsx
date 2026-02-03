@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { 
   Building2, 
   Plus, 
@@ -8,7 +8,6 @@ import {
   MapPin, 
   User, 
   Phone, 
-  MoreHorizontal, 
   Edit2, 
   Trash2, 
   Store,

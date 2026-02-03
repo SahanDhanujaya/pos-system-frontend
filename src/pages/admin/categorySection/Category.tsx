@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { 
   LayoutGrid, 
   Plus, 
   Search, 
   Tag, 
-  MoreHorizontal, 
   Edit2, 
   Trash2, 
   Package,
-  CheckCircle2,
   AlertCircle
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
