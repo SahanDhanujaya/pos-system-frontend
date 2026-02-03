@@ -4,7 +4,6 @@ import About from "@/pages/web/aboutSection/About";
 import Contact from "@/pages/web/contactSection/Contact";
 import Dashboard from "@/pages/web/homeSection/Home";
 import Pricing from "@/pages/web/pricingSection/Pricing";
-import React from "react";
 
 function HomeLayout() {
   return (

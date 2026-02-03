@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { 
   Users, UserPlus, Search, Mail, 
   Shield, Building2, Clock, Edit2, Trash2 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState } from "react";
@@ -17,6 +18,15 @@ export default function OrderPage() {
     { ...PRODUCTS[0], quantity: 2 },
     { ...PRODUCTS[1], quantity: 1 },
   ]);
+
+  const addToCart = (product: any) => {
+    const existingItem = cart.find((item) => item.id === product.id);
+    if (existingItem) {
+      setCart(cart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item)));
+    } else {
+      setCart([...cart, { ...product, quantity: 1 }]);
+    }
+  };
 
   const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const gst = subtotal * 0.18;
@@ -109,7 +119,7 @@ export default function OrderPage() {
              </Field>
 
              <div className="grid grid-cols-2 gap-2 pt-2">
-                <Button className="w-full h-12 text-lg bg-green-600 hover:bg-green-700 text-white col-span-2">Process Payment</Button>
+                <Button onClick={addToCart} className="w-full h-12 text-lg bg-green-600 hover:bg-green-700 text-white col-span-2">Process Payment</Button>
                 <Button variant="outline" className="w-full">Hold Order</Button>
                 <Button variant="outline" className="w-full text-destructive">Cancel</Button>
              </div>

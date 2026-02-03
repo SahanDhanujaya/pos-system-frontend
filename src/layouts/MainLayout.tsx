@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { AsideProvider, useAside } from "../context/AsideContext";
 
 // Components
@@ -32,9 +31,6 @@ function LayoutContent() {
 
   const isMarketingPage = ["/", "/about", "/pricing", "/contact"].includes(activePage);
   const isAuthPage = ["/auth/signin", "/auth/signup"].includes(activePage);
-  
-  // Define Admin routes
-  const isAdminPage = activePage.startsWith("/admin/");
 
   // 1. Marketing Layout (Scrollable One-Page)
   if (isMarketingPage) {
